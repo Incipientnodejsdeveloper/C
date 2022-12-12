@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "line": [
+            2,
+            25
+        ],
+        "text": "int main() {\n   int i, space, rows, k = 0, count = 0, count1 = 0;\n   printf(\"Enter the number of rows: \");\n   scanf(\"%d\", &rows);\n   for (i = 1; i <= rows; ++i) {\n      for (space = 1; space <= rows - i; ++space) {\n         printf(\"  \");\n         ++count;\n      }\n      while (k != 2 * i - 1) {\n         if (count <= rows - 1) {\n            printf(\"%d \", i + k);\n            ++count;\n         } else {\n            ++count1;\n            printf(\"%d \", (i + k - 2 * count1));\n         }\n         ++k;\n      }\n      count1 = count = k = 0;\n      printf(\"\\n\");\n   }\n   return 0;\n}",
+        "type": "function statement"
+    },
+    {
+        "id": 2,
+        "line": [
+            6,
+            23
+        ],
+        "text": "for (i = 1; i <= rows; ++i) {\n      for (space = 1; space <= rows - i; ++space) {\n         printf(\"  \");\n         ++count;\n      }\n      while (k != 2 * i - 1) {\n         if (count <= rows - 1) {\n            printf(\"%d \", i + k);\n            ++count;\n         } else {\n            ++count1;\n            printf(\"%d \", (i + k - 2 * count1));\n         }\n         ++k;\n      }\n      count1 = count = k = 0;\n      printf(\"\\n\");\n   }",
+        "type": "iteration statement"
+    },
+    {
+        "id": 3,
+        "line": [
+            7,
+            10
+        ],
+        "text": "for (space = 1; space <= rows - i; ++space) {\n         printf(\"  \");\n         ++count;\n      }",
+        "type": "iteration statement"
+    },
+    {
+        "id": 4,
+        "line": [
+            11,
+            20
+        ],
+        "text": "while (k != 2 * i - 1) {\n         if (count <= rows - 1) {\n            printf(\"%d \", i + k);\n            ++count;\n         } else {\n            ++count1;\n            printf(\"%d \", (i + k - 2 * count1));\n         }\n         ++k;\n      }",
+        "type": "iteration statement"
+    }
+]
